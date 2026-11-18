@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/graphs/commit-activity)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing?style=social)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing?style=social)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/stargazers)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **A curated index of top SaaS platforms and open-source GitHub projects for 3D Gaussian Splatting (3DGS), real-time radiance fields, WebGPU/WebGL spatial viewers, and neural 3D reconstruction.**
@@ -62,7 +62,7 @@ The following SaaS and hosted commercial platforms provide cloud training, on-de
 
 Explore the most active open-source repositories powering the 3D Gaussian Splatting ecosystem. Repositories are ranked in descending order by GitHub stargazer count.
 
-| Project / Repository | Stars ⭐ | Primary Focus &amp; Architecture 🔧 | License 📜 |
+| Project / Repository | GitHub_Stars ⭐ | Primary Focus &amp; Architecture 🔧 | License 📜 |
 | :--- | :--- | :--- | :--- |
 | **[bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)** | [![Stars](https://img.shields.io/github/stars/bilawalsidhu/gods-eye-view?style=social&color=white)](https://github.com/bilawalsidhu/gods-eye-view/stargazers) | Browser-based spatial intelligence simulator and interactive 3D globe built on CesiumJS with live OSINT, satellite, and flight telemetry feeds. | `MIT` |
 | **[graphdeco-inria/gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting)** | [![Stars](https://img.shields.io/github/stars/graphdeco-inria/gaussian-splatting?style=social&color=white)](https://github.com/graphdeco-inria/gaussian-splatting/stargazers) | Seminal SIGGRAPH 2023 reference CUDA implementation for real-time 3D radiance field training with SIBR interactive viewers. | `Inria Non-Commercial / Research` |
@@ -120,7 +120,7 @@ Contributions are warmly encouraged! To propose a tool, platform, or open-source
 1. **Fork** this repository.
 2. Add your entry in the appropriate table in alphabetical or sorted order.
 3. Ensure all SaaS entries include explicit starting tier pricing and specific free tier limits.
-4. Ensure open-source additions include valid repository links, star count badges, and accurate licenses.
+4. Ensure open-source additions include valid repository links, Stars_Count badges, and accurate licenses.
 5. Submit a **Pull Request** with a descriptive summary of your addition.
 
 ---
