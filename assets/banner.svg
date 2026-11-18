@@ -179,7 +179,7 @@
     <!-- Metric / Ecosystem Info Strip -->
     <g transform="translate(0, 345)">
       <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">
-        🔥 25+ Top Frameworks &bull; 🎯 Nerfstudio, gsplat, SuperSplat &bull; 🚀 Updated for 2026
+        🔥 25+ Top Frameworks &#8226; 🎯 Nerfstudio, gsplat, SuperSplat &#8226; 🚀 Updated for 2026
       </text>
     </g>
   </g>
