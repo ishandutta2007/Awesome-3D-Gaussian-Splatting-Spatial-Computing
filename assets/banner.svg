@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="50%" stop-color="#0b112c" />
+      <stop offset="100%" stop-color="#050711" />
+    </linearGradient>
+
+    <!-- Splat & Orb Gradients -->
+    <radialGradient id="splatCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#4facfe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="splatPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b176fc" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#673ab7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="splatAmber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9a44" stop-opacity="0.75" />
+      <stop offset="70%" stop-color="#fc6076" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ff9a44" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="35%" stop-color="#4facfe" />
+      <stop offset="70%" stop-color="#a18cd1" />
+      <stop offset="100%" stop-color="#fbc2eb" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#7c4dff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141c3a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1e2952" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#253264" stroke-width="0.8" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        50% { transform: translateY(-16px) rotate(4deg) scale(1.05); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        50% { transform: translateY(14px) rotate(-5deg) scale(1.08); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.45; transform: scale(1); }
+        50% { opacity: 0.85; transform: scale(1.12); }
+      }
+      @keyframes orbit {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .splat-1 { animation: floatSlow 7s ease-in-out infinite; }
+      .splat-2 { animation: floatReverse 8.5s ease-in-out infinite; }
+      .splat-3 { animation: floatSlow 6s ease-in-out infinite alternate; }
+      .pulse-orb { animation: pulseGlow 5s ease-in-out infinite; }
+      .orbit-group { transform-origin: 1040px 180px; animation: orbit 22s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2" />
+  
+  <!-- Perspective 3D Grid Floor / Horizon Background -->
+  <rect width="1200" height="420" fill="url(#gridPattern)" rx="16" />
+
+  <!-- Dynamic / Animated Splat Clusters in Deep Background -->
+  <g class="splat-1" transform-origin="200 120">
+    <ellipse cx="200" cy="110" rx="140" ry="75" fill="url(#splatPurple)" filter="url(#glow)" />
+    <circle cx="230" cy="130" r="45" fill="#a78bfa" opacity="0.4" />
+  </g>
+
+  <g class="splat-2" transform-origin="980 280">
+    <ellipse cx="980" cy="270" rx="180" ry="95" fill="url(#splatCyan)" filter="url(#glow)" />
+    <circle cx="950" cy="250" r="50" fill="#38bdf8" opacity="0.35" />
+  </g>
+
+  <g class="splat-3" transform-origin="600 370">
+    <ellipse cx="600" cy="360" rx="200" ry="60" fill="url(#splatAmber)" filter="url(#glow)" />
+  </g>
+
+  <!-- Animated Splat Orb in Upper Right Quadrant -->
+  <g class="pulse-orb" transform-origin="1040 160">
+    <circle cx="1040" cy="160" r="70" fill="url(#splatCyan)" />
+  </g>
+
+  <!-- Orbiting Splat Particles -->
+  <g class="orbit-group">
+    <circle cx="1040" cy="65" r="9" fill="#00f2fe" opacity="0.8" />
+    <circle cx="1145" cy="180" r="7" fill="#b176fc" opacity="0.85" />
+    <circle cx="1040" cy="255" r="11" fill="#f43f5e" opacity="0.7" />
+    <circle cx="935" cy="180" r="8" fill="#38bdf8" opacity="0.75" />
+  </g>
+
+  <!-- Spatial Coordinate Wireframe Nodes (Foreground Right) -->
+  <g stroke="#38bdf8" stroke-width="1.2" opacity="0.4" stroke-dasharray="3,3">
+    <line x1="935" y1="180" x2="1040" y2="65" />
+    <line x1="1040" y1="65" x2="1145" y2="180" />
+    <line x1="1145" y1="180" x2="1040" y2="255" />
+    <line x1="1040" y1="255" x2="935" y2="180" />
+    <line x1="1040" y1="65" x2="1040" y2="255" />
+    <line x1="935" y1="180" x2="1145" y2="180" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: Title, Subtitle, Badges (Crisp, Guaranteed Legible) -->
+  <g transform="translate(70, 0)">
+    
+    <!-- Top Meta Tag -->
+    <g transform="translate(0, 68)">
+      <rect width="250" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" opacity="0.9" />
+      <circle cx="16" cy="14" r="5" fill="#00f2fe">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="30" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#93c5fd" letter-spacing="1">REAL-TIME RADIANCE FIELDS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">
+      3D Gaussian Splatting
+    </text>
+    <text x="0" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="-0.3">
+      &amp; Spatial Computing
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      Curated ecosystem of SaaS tools, differentiable rasterizers, WebGPU/WebGL viewers &amp; neural pipelines
+    </text>
+
+    <!-- Interactive / Highlight Feature Pills -->
+    <g transform="translate(0, 275)">
+      <!-- Pill 1: SaaS & Cloud -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="36" rx="8" fill="url(#pillGrad)" stroke="#3b82f6" stroke-width="1.2" />
+        <text x="16" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#60a5fa">☁️ Cloud SaaS Capture</text>
+      </g>
+
+      <!-- Pill 2: Open-Source -->
+      <g transform="translate(182, 0)">
+        <rect width="180" height="36" rx="8" fill="url(#pillGrad)" stroke="#8b5cf6" stroke-width="1.2" />
+        <text x="16" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#c084fc">⚡ Open-Source CUDA/Metal</text>
+      </g>
+
+      <!-- Pill 3: WebGPU Viewers -->
+      <g transform="translate(374, 0)">
+        <rect width="190" height="36" rx="8" fill="url(#pillGrad)" stroke="#06b6d4" stroke-width="1.2" />
+        <text x="16" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#22d3ee">🌐 WebGPU / WebXR 6DoF</text>
+      </g>
+
+      <!-- Pill 4: 2D & 4D Spatiotemporal -->
+      <g transform="translate(576, 0)">
+        <rect width="170" height="36" rx="8" fill="url(#pillGrad)" stroke="#ec4899" stroke-width="1.2" />
+        <text x="16" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#f472b6">🔮 2D/4D Volumetric</text>
+      </g>
+    </g>
+
+    <!-- Metric / Ecosystem Info Strip -->
+    <g transform="translate(0, 345)">
+      <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">
+        🔥 25+ Top Frameworks &bull; 🎯 Nerfstudio, gsplat, SuperSplat &bull; 🚀 Updated for 2026
+      </text>
+    </g>
+  </g>
+</svg>

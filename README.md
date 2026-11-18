@@ -1,254 +1,148 @@
-# Awesome-3D-Gaussian-Splatting-Spatial-Computing
-# Awesome-3D-Gaussian-Splatting-Spatial-Computing
+<div align="center">
 
-## Top 3D Gaussian Splatting & Spatial Computing Ecosystem
+<a href="https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing">
+  <img src="assets/banner.svg" alt="Awesome 3D Gaussian Splatting &amp; Spatial Computing Banner" width="100%"/>
+</a>
 
+# 🌌 Awesome 3D Gaussian Splatting & Spatial Computing
 
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jc4xtF58Ve)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/graphs/commit-activity)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing?style=social)](https://github.com/ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing/stargazers)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**A curated index of top SaaS platforms and open-source GitHub projects for 3D Gaussian Splatting (3DGS), real-time radiance fields, WebGPU/WebGL spatial viewers, and neural 3D reconstruction.**
 
-*Focused on Real-Time Radiance Fields, 3DGS Training & WebGPU/WebGL Viewers, Spatial Intelligence & Photorealistic Capture*  
+*Explore real-time spatial computing, 6DoF novel view synthesis, point-based radiance fields, 4D spatiotemporal splats, and XR runtime pipelines.*
 
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **3D Gaussian Splatting & Spatial Computing**. These tools capture photorealistic 3D scenes from video or LiDAR, train and compress Gaussian splats locally or in the cloud, edit point-based radiance fields, and render real-time spatial computing worlds in browsers, XR headsets, and game engines.
-
-
-
-**Examples** include Luma AI, Polycam, Jawset Postshot, KIRI Engine, Scaniverse, Gracia AI, Spline, Nerfstudio, SuperSplat, and bilawalsidhu/gods-eye-view (the category leaders). 
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for local 3DGS training across CUDA/Metal/WebGPU, browser-based splat editors, spatial intelligence globes, 2D/4D Gaussian Splatting, and Unreal/Unity/Blender/Three.js runtimes — ideal for spatial computing engineers, VFX artists, computer vision researchers, and WebXR developers building vendor-free pipelines.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Luma AI (Luma Capture & Genie)](https://lumalabs.ai)**  
-
-  Cloud AI platform for capturing photorealistic 3D Gaussian Splats from smartphone videos, generating 3D assets from text, and embedding interactive WebGL radiance fields.
-
-
-
-- **[Polycam](https://poly.cam)**  
-
-  Cross-platform mobile and web 3D scanning suite supporting cloud 3D Gaussian Splatting, LiDAR capture, photogrammetry, and browser-based splat sharing.
-
-
-
-- **[Jawset Postshot](https://www.jawset.com/)**  
-
-  High-speed local desktop 3D Gaussian Splatting and radiance field reconstruction software featuring live training previews, ACES color pipelines, and Unreal Engine / After Effects plugins.
-
-
-
-- **[KIRI Engine](https://kiriengine.app)**  
-
-  Cloud 3D scanning and Gaussian Splatting platform offering mobile capture, splat-to-mesh conversion, quad-retopology, and official Blender add-on integration.
-
-
-
-- **[Niantic Scaniverse](https://scaniverse.com)**  
-
-  Mobile spatial scanning app capable of on-device 3D Gaussian Splatting capture, editing, and geospatial world mapping without requiring cloud uploads.
-
-
-
-- **[Gracia AI](https://gracia.ai)**  
-
-  Spatial computing platform for publishing, streaming, and experiencing photorealistic 6DoF volumetric 3D Gaussian Splatting scenes across VR headsets, desktop, and web.
-
-
-
-- **[Spline (3DGS Support)](https://spline.design)**  
-
-  Collaborative browser-based 3D design studio supporting imported 3D Gaussian Splats alongside interactive lighting, physics, and embeddable web showrooms.
-
-
-
-- **[Arrival.Space](https://arrival.space)**  
-
-  Cloud spatial computing and virtual showroom platform designed for hosting, decorating, and walking through photorealistic 3D Gaussian Splatting environments in browsers.
-
-
-
-- **[StorySplat / SplatCloud](https://storysplat.com)**  
-
-  Cloud hosting and interactive storytelling builder for creating guided camera tours, audio hotspots, and embedded web presentations from `.ply` and `.splat` files.
-
-
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Nerfstudio](https://github.com)**  
-
-  Modular open-source (`Apache-2.0`) PyTorch framework unifying 3D Gaussian Splatting (`splatfacto`), NeRFs, COLMAP/GLOMAP pose estimation, and a real-time web viewer.
-
-
-
-- **[gsplat (Nerfstudio)](https://github.com/nerfstudio-project/gsplat)**  
-
-  High-performance open-source (`Apache-2.0`) CUDA-accelerated differentiable rasterization library for 3DGS with up to 4x lower memory usage, LiDAR modes, and multi-GPU scaling.
-
-
-
-- **[SuperSplat (PlayCanvas)](https://github.com/playcanvas/supersplat)**  
-
-  Free and open-source (`MIT`) browser-based 3D Gaussian Splatting editor and optimizer for cropping, cleaning floaters, compressing (`.compressed.ply` / `.sog`), and publishing splats.
-
-
-
-- **[Brush (ArthurBrussee/brush)](https://github.com/ArthurBrussee/brush)**  
-
-  Cross-platform open-source (`Apache-2.0`) 3DGS training and rendering engine built in Rust with Burn and WebGPU—running natively on NVIDIA, AMD, Intel, Apple Silicon, Android, and browsers.
-
-
-
-- **[LichtFeld Studio](https://github.com)**  
-
-  Modular open-source (`GPL-3.0`) C++/CUDA native workstation for 3D Gaussian Splatting enabling local training, real-time inspection, editing, automation, and export in one app.
-
-
-
-- **[bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)**  
-
-  Open-source (`MIT`) browser-based spatial intelligence and photorealistic 3D globe simulator built on CesiumJS with live aircraft, satellite, seismic, and OSINT telemetry feeds.
-
-
-
-- **[Original 3D Gaussian Splatting (`graphdeco-inria`)](https://github.com)**  
-
-  Reference SIGGRAPH 2023 open-source CUDA implementation for real-time radiance field rendering, accompanied by SIBR real-time interactive viewers.
-
-
-
-- **[OpenSplat](https://github.com)**  
-
-  Free and open-source (`AGPL-3.0`) C++ implementation of 3D Gaussian Splatting supporting NVIDIA CUDA, Apple Silicon Metal, AMD ROCm, and CPU execution without Python dependencies.
-
-
-
-- **[GaussianSplats3D (`mkkellogg`)](https://github.com)**  
-
-  Popular open-source (`MIT`) Three.js-based WebGL implementation and progressive streaming viewer for rendering 3D Gaussian Splats inside custom web applications.
-
-
-
-- **[Spark (World Labs)](https://github.com)**  
-
-  Advanced open-source (`MIT`) WebGL2 3D Gaussian Splatting renderer deeply integrated with Three.js for high-performance spatial scenes, shaders, and WebXR experiences.
-
-
-
-- **[2D Gaussian Splatting (`hbb1/2d-gaussian-splatting`)](https://github.com)**  
-
-  SIGGRAPH 2024 open-source (`MIT`) extension representing 3D scenes with geometrically accurate 2D oriented planar disks for clean mesh extraction and surface reconstruction.
-
-
-
-- **[4D Gaussian Splatting (`hustvl/4DGaussians`)](https://github.com)**  
-
-  CVPR 2024 open-source (`MIT`) dynamic scene reconstruction framework extending 3DGS with spatial-temporal HexPlane deformation fields for real-time volumetric video.
-
-
-
-- **[Luma WebGL Library (`luma-web`)](https://github.com)**  
-
-  Official open-source (`MIT`) Three.js library from Luma AI for rendering interactive Gaussian Splats with lighting integration, fog, and custom GLSL shaders.
-
-
-
-- **[UnityGaussianSplatting (`aras-p`)](https://github.com)**  
-
-  Widely adopted open-source (`MIT`) Unity package for importing, editing, compressing, and rendering 3D Gaussian Splatting assets in real time inside Unity.
-
-
-
-- **[XV3DGS / Unreal Gaussian Splatting Plugins](https://github.com)**  
-
-  Open-source Unreal Engine 5 plugin ecosystem for importing, relighting, and rendering 3D Gaussian Splats in virtual production and spatial computing worlds.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[COLMAP](https://github.com)** and **[GLOMAP](https://github.com)** for open-source Structure-from-Motion (SfM) and ultra-fast global camera pose estimation prior to 3DGS training.
-
-- **[DUSt3R](https://github.com)** and **[MASt3R](https://github.com)** for pose-free dense 3D pointmap reconstruction from uncalibrated image pairs.
-
-- **[3DGS.cpp](https://github.com)** and **[MetalSplat](https://github.com)** / **[Splat Local](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)** for lightweight native C++ and Apple Silicon Metal 3DGS training pipelines.
-
-- **[SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer)** and **[Antimatter15/splat](https://github.com)** for zero-dependency WebGL/WebGPU splat embedding with stochastic depth-tested XR rendering.
-
-- **[MrNeRF/awesome-3D-gaussian-splatting](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)** and **[ishandutta2007/Awesome-Gaussian-Splatting](https://github.com/ishandutta2007/Awesome-Gaussian-Splatting)** for comprehensive research paper indexes and specialized 3DGS forks.
-
-
-
-**Frameworks for building custom systems**: Combine **GLOMAP** + **Nerfstudio (`gsplat`)** or **Brush** with **SuperSplat** (for cleanup & `.sog` compression) and **Spark / GaussianSplats3D** (for Three.js & WebXR deployment) for end-to-end open-source spatial computing pipelines.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Training 3D Gaussian Splatting models locally requires significant VRAM (CUDA, ROCm, Metal, or WebGPU) and calibrated camera poses (via COLMAP/GLOMAP or SfM-free predictors).
-
-- Verify license compatibility (`MIT`, `Apache-2.0`, `GPL-3.0`, `AGPL-3.0`, or non-commercial research weights) before deploying capture tools or viewers in commercial spatial computing products.
-
-
+</div>
 
 ---
 
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Recommended End-to-End Pipelines](#️-recommended-end-to-end-pipelines)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [📜 Disclaimer](#-disclaimer)
 
-**Made for spatial computing engineers, 3D capture artists, computer vision researchers, and WebXR developers.**  
+---
 
-Let's make 3D Gaussian Splatting and spatial intelligence more open, real-time, and accessible.
+## 🌐 Sector Overview & Market Dynamics
+
+The global **3D Gaussian Splatting (3DGS) and spatial computing software sector** is estimated at **$1.8 billion to $2.8 billion in 2026** and is accelerating at a compound annual growth rate (**CAGR) between 16% and 21%**, projected to eclipse **$9.5 billion by 2033** across VFX, digital twins, robotics simulation, and geospatial intelligence. The industry is currently **moderately fragmented** at the application and capture-tool layer with rapid startup specialization, but exhibits **concentrated winner-take-most dynamics** around underlying GPU compute hardware (NVIDIA), foundation 3D spatial AI engines, and emerging format standards led by the Khronos Group (`KHR_gaussian_splatting`) and OpenUSD.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+The following SaaS and hosted commercial platforms provide cloud training, on-device mobile capture, spatial scene hosting, and interactive web/XR embeds for 3D Gaussian Splatting. Products are ordered by company size (valuation / funding / revenue descending).
+
+| Product / Platform | Company Scale &amp; Valuation 🏢 | Pricing (Starting Tier) 💳 | Free Tier &amp; Trial Limits 🎁 | Description &amp; Spatial Features 🚀 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Niantic Scaniverse](https://scaniverse.com)** | **$3.5B+ Valuation** ($1B+ historical gaming rev; spun out to Niantic Spatial) | **$20/month** (Plus plan, or $1 per 1,800 pay-as-you-go credits) | **Free forever**: Unlimited on-device splat capture/processing &amp; mesh export; includes 20,000 monthly cloud processing credits | On-device mobile 3DGS capture, splat editing, and geospatial Gaussian mapping across iOS and Android without mandatory cloud dependencies. |
+| **[Luma AI](https://lumalabs.ai)** | **$4.0B Valuation** ($900M+ Series C round) | **$30/month** (Plus plan, $25/mo billed annually) | **Free forever**: Limited to ~80 daily credits (approx. 1 generation/capture per day), non-commercial use, watermarked exports | Multimodal generative 3D &amp; video platform (Dream Machine, Genie) with cloud 3D Gaussian Splatting pipelines and interactive WebGL scene embeds. |
+| **[Polycam](https://poly.cam)** | **$150M–$250M Est. Valuation** ($22M funding, ~$6.3M ARR) | **$30/month** ($150/year, billed as $12.50/mo) | **Free forever**: Limited photo/LiDAR captures, capped exports (GLTF web export only), public scene sharing only | Cross-platform mobile and web reality-capture suite supporting cloud 3D Gaussian Splatting, LiDAR scanning, and browser scene sharing. |
+| **[Spline](https://spline.design)** | **$80M–$100M Est. Valuation** ($32M funding, ~$4.7M ARR) | **$15/month** (Hobby plan, $12/mo billed annually) | **Free forever**: Limited personal files, unlimited viewers, access to basic library/templates, web exports include visible Spline watermark | Browser-first 3D design studio featuring native 3DGS import, real-time physics, collaborative scene graphs, and embeddable web showrooms. |
+| **[Gracia AI](https://gracia.ai)** | **$15M–$25M Est. Valuation** ($2.9M Seed funding) | **$800/minute** of processed content (VR/Streaming tier; $2,500/min VFX tier) | **Free forever**: Free client-side VR viewer apps (Meta Quest, Apple Vision Pro) with 25+ preloaded captures and custom `.ply` local playback | Specialized volumetric 4D Gaussian Splatting (4DGS) engine delivering 6DoF photorealistic video streaming across VR headsets and desktop browsers. |
+| **[KIRI Engine](https://kiriengine.app)** | **~$15M–$25M Est. Scale** (Series A hundreds of millions RMB, Huawei Hubble backed) | **$17.99/month** ($79.99/year, billed as $6.66/mo; 7-day free trial on annual plan) | **Free forever**: Max 150 photos / 2 GB per photogrammetry scan, unlimited basic exports (OBJ, FBX, STL, GLB, USDZ); 3DGS requires Pro | Cloud 3D scanning suite featuring mobile capture, 3D Gaussian Splatting, splat-to-mesh retopology, AI PBR maps, and official Blender integration. |
+| **[Jawset Postshot](https://www.jawset.com/)** | **Bootstrapped / Indie VFX Leader** (Jawset TurbulenceFD creator) | **€26/month** (Indie plan, or €204/year billed as €17/mo excl. VAT) | **Free forever**: Unlimited photos/video length, SDR 8-bit color, capped at 4K resolution, non-commercial only, watermarked, PLY/SPZ export locked | High-performance desktop 3DGS workstation featuring live training previews, ACES color management, and native Unreal Engine / After Effects plugins. |
+| **[Arrival.Space](https://arrival.space)** | **Early-Stage Spatial Startup** (&lt;$5M Seed stage) | **$6.99/month** (Creator plan incl. VAT) | **Free forever**: 3 GB cloud storage, standard community traffic limits, public/private immersive spaces | Cloud spatial computing showroom platform for hosting, decorating, and walking through interactive 3D Gaussian Splatting web worlds. |
+| **[StorySplat](https://storysplat.com)** | **Early-Stage Splat Studio** (&lt;$5M Seed stage) | **$19/month** (Plus plan; add-on credits at $10 per 1,000 credits) | **Free forever**: 1 GB storage, non-commercial personal use, public scene sharing, interactive camera tour editor | Cloud hosting and narrative builder for crafting interactive camera walkthroughs, audio hotspots, and embeddable web presentations from `.ply` files. |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+Explore the most active open-source repositories powering the 3D Gaussian Splatting ecosystem. Repositories are ranked in descending order by GitHub stargazer count.
+
+| Project / Repository | Stars ⭐ | Primary Focus &amp; Architecture 🔧 | License 📜 |
+| :--- | :--- | :--- | :--- |
+| **[bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)** | [![Stars](https://img.shields.io/github/stars/bilawalsidhu/gods-eye-view?style=social&color=white)](https://github.com/bilawalsidhu/gods-eye-view/stargazers) | Browser-based spatial intelligence simulator and interactive 3D globe built on CesiumJS with live OSINT, satellite, and flight telemetry feeds. | `MIT` |
+| **[graphdeco-inria/gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting)** | [![Stars](https://img.shields.io/github/stars/graphdeco-inria/gaussian-splatting?style=social&color=white)](https://github.com/graphdeco-inria/gaussian-splatting/stargazers) | Seminal SIGGRAPH 2023 reference CUDA implementation for real-time 3D radiance field training with SIBR interactive viewers. | `Inria Non-Commercial / Research` |
+| **[colmap/colmap](https://github.com/colmap/colmap)** | [![Stars](https://img.shields.io/github/stars/colmap/colmap?style=social&color=white)](https://github.com/colmap/colmap/stargazers) | Industry-standard Structure-from-Motion (SfM) and Multi-View Stereo (MVS) pipeline providing camera poses and sparse point clouds for 3DGS. | `BSD-3-Clause` |
+| **[nerfstudio-project/nerfstudio](https://github.com/nerfstudio-project/nerfstudio)** | [![Stars](https://img.shields.io/github/stars/nerfstudio-project/nerfstudio?style=social&color=white)](https://github.com/nerfstudio-project/nerfstudio/stargazers) | Modular PyTorch framework unifying 3D Gaussian Splatting (`splatfacto`), NeRFs, camera pose optimizers, and a web-based training viewer. | `Apache-2.0` |
+| **[playcanvas/supersplat](https://github.com/playcanvas/supersplat)** | [![Stars](https://img.shields.io/github/stars/playcanvas/supersplat?style=social&color=white)](https://github.com/playcanvas/supersplat/stargazers) | Browser-based 3D Gaussian Splatting editor for trimming floaters, scene optimization, and exporting compressed `.sog` / `.compressed.ply` files. | `MIT` |
+| **[MrNeRF/awesome-3D-gaussian-splatting](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)** | [![Stars](https://img.shields.io/github/stars/MrNeRF/awesome-3D-gaussian-splatting?style=social&color=white)](https://github.com/MrNeRF/awesome-3D-gaussian-splatting/stargazers) | Comprehensive community-curated research paper tracker, taxonomy, and implementation bibliography for 3D Gaussian Splatting. | `CC0-1.0` |
+| **[naver/dust3r](https://github.com/naver/dust3r)** | [![Stars](https://img.shields.io/github/stars/naver/dust3r?style=social&color=white)](https://github.com/naver/dust3r/stargazers) | Pose-free neural 3D dense reconstruction engine generating aligned 3D pointmaps directly from unconstrained image pairs without prior SfM. | `CC-BY-NC-SA-4.0` |
+| **[nerfstudio-project/gsplat](https://github.com/nerfstudio-project/gsplat)** | [![Stars](https://img.shields.io/github/stars/nerfstudio-project/gsplat?style=social&color=white)](https://github.com/nerfstudio-project/gsplat/stargazers) | High-performance, memory-efficient CUDA/C++ differentiable rasterization library for 3DGS with multi-GPU scaling, 2DGS, and LiDAR support. | `Apache-2.0` |
+| **[ArthurBrussee/brush](https://github.com/ArthurBrussee/brush)** | [![Stars](https://img.shields.io/github/stars/ArthurBrussee/brush?style=social&color=white)](https://github.com/ArthurBrussee/brush/stargazers) | Universal cross-platform 3D reconstruction and 3DGS training engine written in Rust with Burn and WebGPU (runs on Mac Metal, Windows, Linux, Android). | `Apache-2.0` |
+| **[hustvl/4DGaussians](https://github.com/hustvl/4DGaussians)** | [![Stars](https://img.shields.io/github/stars/hustvl/4DGaussians?style=social&color=white)](https://github.com/hustvl/4DGaussians/stargazers) | CVPR 2024 dynamic scene reconstruction framework incorporating 4D spatiotemporal HexPlane deformation fields for real-time volumetric video. | `MIT` |
+| **[MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio)** | [![Stars](https://img.shields.io/github/stars/MrNeRF/LichtFeld-Studio?style=social&color=white)](https://github.com/MrNeRF/LichtFeld-Studio/stargazers) | Modular desktop workstation in C++/CUDA featuring real-time training, interactive splat brush editing, Python plugins, and MCP automation. | `GPL-3.0` |
+| **[aras-p/UnityGaussianSplatting](https://github.com/aras-p/UnityGaussianSplatting)** | [![Stars](https://img.shields.io/github/stars/aras-p/UnityGaussianSplatting?style=social&color=white)](https://github.com/aras-p/UnityGaussianSplatting/stargazers) | Native Unity package for importing, editing, compressing, and rendering 3D Gaussian Splats in real-time inside Unity (URP/HDRP/DX12/Metal/Vulkan). | `MIT` |
+| **[hbb1/2d-gaussian-splatting](https://github.com/hbb1/2d-gaussian-splatting)** | [![Stars](https://img.shields.io/github/stars/hbb1/2d-gaussian-splatting?style=social&color=white)](https://github.com/hbb1/2d-gaussian-splatting/stargazers) | SIGGRAPH 2024 geometric radiance field representation using 2D oriented planar surfels for clean surface reconstruction and mesh extraction. | `MIT` |
+| **[naver/mast3r](https://github.com/naver/mast3r)** | [![Stars](https://img.shields.io/github/stars/naver/mast3r?style=social&color=white)](https://github.com/naver/mast3r/stargazers) | Advanced 3D image matching and point tracking architecture building upon DUSt3R for pixel-accurate dense correspondence and geometry. | `CC-BY-NC-SA-4.0` |
+| **[antimatter15/splat](https://github.com/antimatter15/splat)** | [![Stars](https://img.shields.io/github/stars/antimatter15/splat?style=social&color=white)](https://github.com/antimatter15/splat/stargazers) | Zero-dependency, lightweight WebGL 3D Gaussian Splat viewer enabling direct drag-and-drop viewing and embedding in plain HTML/JS. | `MIT` |
+| **[mkkellogg/GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)** | [![Stars](https://img.shields.io/github/stars/mkkellogg/GaussianSplats3D?style=social&color=white)](https://github.com/mkkellogg/GaussianSplats3D/stargazers) | Highly optimized Three.js-based WebGL/WebGPU 3D Gaussian Splatting renderer supporting progressive octree streaming, LODs, and VR modes. | `MIT` |
+| **[nerfstudio-project/viser](https://github.com/nerfstudio-project/viser)** | [![Stars](https://img.shields.io/github/stars/nerfstudio-project/viser?style=social&color=white)](https://github.com/nerfstudio-project/viser/stargazers) | Web-based interactive 3D visualization and coordinate transform framework for Python, robotics, and radiance field debugging. | `Apache-2.0` |
+| **[colmap/glomap](https://github.com/colmap/glomap)** | [![Stars](https://img.shields.io/github/stars/colmap/glomap?style=social&color=white)](https://github.com/colmap/glomap/stargazers) | Fast Global Structure-from-Motion pipeline delivering orders-of-magnitude faster camera pose estimation compared to incremental SfM. | `BSD-3-Clause` |
+| **[WebODM/OpenSplat](https://github.com/WebODM/OpenSplat)** | [![Stars](https://img.shields.io/github/stars/WebODM/OpenSplat?style=social&color=white)](https://github.com/WebODM/OpenSplat/stargazers) | Dependency-light C++ 3DGS training software with native CUDA, Apple Silicon Metal, AMD ROCm, and CPU execution for drone photogrammetry. | `AGPL-3.0` |
+| **[spla-tam/SplaTAM](https://github.com/spla-tam/SplaTAM)** | [![Stars](https://img.shields.io/github/stars/spla-tam/SplaTAM?style=social&color=white)](https://github.com/spla-tam/SplaTAM/stargazers) | Splat, Track &amp; Map: Dense RGB-D SLAM engine using 3D Gaussians for online camera tracking and high-fidelity scene reconstruction. | `Apache-2.0` |
+| **[graphdeco-inria/diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization)** | [![Stars](https://img.shields.io/github/stars/graphdeco-inria/diff-gaussian-rasterization?style=social&color=white)](https://github.com/graphdeco-inria/diff-gaussian-rasterization/stargazers) | Core CUDA rasterization sub-module for the original 3D Gaussian Splatting codebase providing fast forward and backward passes. | `Inria Non-Commercial / Research` |
+| **[autonomousvision/mip-splatting](https://github.com/autonomousvision/mip-splatting)** | [![Stars](https://img.shields.io/github/stars/autonomousvision/mip-splatting?style=social&color=white)](https://github.com/autonomousvision/mip-splatting/stargazers) | CVPR 2024 Best Student Paper: Anti-aliased 3D Gaussian Splatting eliminating dilation and sampling artifacts across zoom levels. | `Apache-2.0` |
+| **[oppo-us-research/SpacetimeGaussians](https://github.com/oppo-us-research/SpacetimeGaussians)** | [![Stars](https://img.shields.io/github/stars/oppo-us-research/SpacetimeGaussians?style=social&color=white)](https://github.com/oppo-us-research/SpacetimeGaussians/stargazers) | Spacetime Gaussian Feature Splatting for high-resolution, photorealistic 4D dynamic volumetric video synthesis. | `S-NTU Non-Commercial` |
+| **[shg8/3DGS.cpp](https://github.com/shg8/3DGS.cpp)** | [![Stars](https://img.shields.io/github/stars/shg8/3DGS.cpp?style=social&color=white)](https://github.com/shg8/3DGS.cpp/stargazers) | High-performance, cross-platform Vulkan compute renderer for 3D Gaussian Splatting across Windows, Linux, macOS, iOS, and visionOS. | `MIT` |
+| **[playcanvas/supersplat-viewer](https://github.com/playcanvas/supersplat-viewer)** | [![Stars](https://img.shields.io/github/stars/playcanvas/supersplat-viewer?style=social&color=white)](https://github.com/playcanvas/supersplat-viewer/stargazers) | Lightweight embeddable WebGL/WebGPU viewer component for rendering `.ply` and compressed `.sog` splat files inside any web application. | `MIT` |
+| **[lumalabs/luma-web-library](https://github.com/lumalabs/luma-web-library)** | [![Stars](https://img.shields.io/github/stars/lumalabs/luma-web-library?style=social&color=white)](https://github.com/lumalabs/luma-web-library/stargazers) | Three.js rendering library for embedding interactive Luma Gaussian Splat captures with custom GLSL lighting, fog, and shaders. | `Apache-2.0` |
+| **[ishandutta2007/Awesome-Gaussian-Splatting](https://github.com/ishandutta2007/Awesome-Gaussian-Splatting)** | [![Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Gaussian-Splatting?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Gaussian-Splatting/stargazers) | Community-driven repository curated with foundational papers, tutorials, tools, datasets, and guides for 3D Gaussian Splatting. | `MIT` |
+
+---
+
+## 🛠️ Recommended End-to-End Pipelines
+
+For developers building autonomous or custom production pipelines without commercial lock-in:
+
+```mermaid
+flowchart LR
+    A["📸 Multi-View Capture<br/>(Video / Smartphone / Drone)"] --> B["⚡ Camera Poses<br/>GLOMAP / DUSt3R"]
+    B --> C["🔥 3DGS Training<br/>gsplat / Nerfstudio / Brush"]
+    C --> D["✂️ Optimization &amp; Cleanup<br/>SuperSplat (.sog / .ply)"]
+    D --> E["🌐 WebXR / App Deployment<br/>GaussianSplats3D / Unity / Cesium"]
+```
+
+1. **Camera Estimation &amp; Poses**: Use **GLOMAP** (or **DUSt3R** for pose-free sparse matching) for fast camera pose recovery.
+2. **Local Training**: Train with **Nerfstudio (`gsplat`)** on NVIDIA CUDA or **Brush** across Apple Silicon Metal / WebGPU.
+3. **Editing &amp; Compression**: Import into **SuperSplat** to crop floaters, compress spherical harmonics, and generate `.sog` web assets.
+4. **Interactive Deployment**: Render via **GaussianSplats3D** (Three.js), **UnityGaussianSplatting** (game engines), or **God's Eye View / Cesium** (geospatial).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! To propose a tool, platform, or open-source library:
+
+1. **Fork** this repository.
+2. Add your entry in the appropriate table in alphabetical or sorted order.
+3. Ensure all SaaS entries include explicit starting tier pricing and specific free tier limits.
+4. Ensure open-source additions include valid repository links, star count badges, and accurate licenses.
+5. Submit a **Pull Request** with a descriptive summary of your addition.
+
+---
+
+## 💖 Support
+
+If you found this curated spatial computing resource helpful, please consider:
+- ⭐ **Starring** this repository to help others discover it.
+- 🍴 **Forking** it to experiment with your own spatial computing configurations.
+- 📢 **Sharing** with fellow graphics engineers, computer vision researchers, and XR creators.
+- ☕ **Sponsoring** development via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-3D-Gaussian-Splatting-Spatial-Computing&type=date&legend=top-left)
+
+---
+
+## 📜 Disclaimer
+
+- This list is community-curated for informational and educational purposes. Mentions do not constitute commercial endorsements.
+- Training high-fidelity 3D Gaussian Splatting models locally typically requires dedicated GPU VRAM (NVIDIA CUDA, AMD ROCm, or Apple Silicon Metal).
+- Review all software licenses (`MIT`, `Apache-2.0`, `GPL-3.0`, `AGPL-3.0`, or research-only non-commercial agreements) before embedding assets into commercial applications.
